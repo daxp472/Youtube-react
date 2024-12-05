@@ -1,0 +1,38 @@
+body{
+  background-color: black;
+}
+
+.main-container{
+  background-color: #212121;
+  color: #909090;
+}
+
+
+.top{
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.text{
+  margin-left: 15px;
+  margin-right: 25px;
+}
+
+.cont{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 25px;
+}
+.box{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 25px;
+}
+.sub{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 25px;
+}

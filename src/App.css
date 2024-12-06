@@ -1,3 +1,7 @@
+.imp{
+  display: flex;
+}
+
 body{
   background-color: black;
 }
@@ -35,4 +39,279 @@ body{
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 25px;
+}
+
+
+
+.all{
+  background-color: #181818;
+  color: #FFFFFF;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #181818;
+  color: white;
+  margin-bottom: 91vh;
+  /* width: 70%; */
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  
+}
+
+.search-input {
+  width: 600px;
+  height: 40px;
+  padding: 8px 10px;
+  background-color: #121212;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 2px;
+  margin-left: 150px;
+}
+
+.search-btn {
+  background-color: #333;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.mic-btn {
+  background-color: #333;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.search-btn img, .mic-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  cursor: pointer;
+ padding: 5PX;
+}
+
+.profile {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.foralingment{
+  display: flex;
+}
+
+
+.trending{
+  display: flex;
+}
+.comp{
+  border-radius: 20px;
+  background-color: #383838;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  margin-left: 8px;
+  margin-top: 5px;
+  
+}
+
+
+/* General Styles */
+.main-content {
+  padding: 20px;
+}
+
+/* Row Layout */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+   /* Adds spacing between videos */
+  margin-bottom: 20px; /* Space between rows */
+}
+
+/* Video Card Styles */
+.video {
+  flex: 1 1 calc(25% - 20px); /* 4 videos per row, with space */
+  margin-top: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+  padding: 10px; /* Space inside the video card */
+  text-align: center;
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.video .play-btn {
+  left: 10px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+}
+
+.play-btn{
+  width: 25px;
+  margin-top: 10px;
+}
+
+.video .title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.video .views,
+.video .channel,
+.video .date {
+  font-size: 12px;
+  color: #757575;
+  margin-top: 5px;
+}
+
+.cpy{
+  display: flex;
+}
+.cpy2{
+  margin-left: 10px;
+  margin-top: -10px;
+}
+.cpy3{
+  display: flex;
+}
+
+
+
+
+
+
+.navbar {
+  display: flex;
+  padding: 5px 10px;
+  background-color: #181818;
+  color: white;
+  margin-bottom: 91vh;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  
+}
+
+.search-input {
+  width: 200px;
+  height: 20px;
+  padding: 5px 8px;
+  background-color: #121212;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 2px;
+  margin-left: 150px;
+}
+
+.search-btn {
+  background-color: #333;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.mic-btn {
+  background-color: #333;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.search-btn img, .mic-btn img {
+  width: 10px;
+  height: 10px;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+ padding: 5PX;
+}
+
+
+
+.profile {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.foralingment{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* // extra */
+
+
+@media (max-width: 768px) {
+  .search-input {
+    width: 300px;
+  }
+  .video {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input {
+    width: 200px;
+  }
+  .video {
+    flex: 1 1 100%; /* 1 item per row on very small screens */
+  }
 }

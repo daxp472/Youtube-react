@@ -3,7 +3,7 @@
 }
 
 body{
-  background-color: black;
+  background-color: white;
 }
 
 .main-container{
@@ -56,7 +56,6 @@ body{
   background-color: #181818;
   color: white;
   margin-bottom: 91vh;
-  /* width: 70%; */
 }
 
 .navbar-search {
@@ -126,6 +125,7 @@ body{
 
 .trending{
   display: flex;
+  margin-top: -580px;
 }
 .comp{
   border-radius: 20px;
@@ -138,29 +138,26 @@ body{
   
 }
 
-
-/* General Styles */
 .main-content {
-  padding: 20px;
+  padding: 10px;
 }
 
-/* Row Layout */
+
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
-   /* Adds spacing between videos */
-  margin-bottom: 20px; /* Space between rows */
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-/* Video Card Styles */
+
 .video {
-  flex: 1 1 calc(25% - 20px); /* 4 videos per row, with space */
+  flex: 1 1 calc(25% - 20px);
   margin-top: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
-  padding: 10px; /* Space inside the video card */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
   text-align: center;
-  border-radius: 8px; /* Optional: Rounded corners */
+  border-radius: 8px;
 }
 
 .video .play-btn {
@@ -193,8 +190,8 @@ body{
   display: flex;
 }
 .cpy2{
-  margin-left: 10px;
-  margin-top: -10px;
+  margin-top: 5px;
+  margin-left: 20px;
 }
 .cpy3{
   display: flex;
@@ -289,13 +286,7 @@ body{
 
 
 
-
-
-
-
-
-
-/* // extra */
+/* extra */
 
 
 @media (max-width: 768px) {
@@ -303,7 +294,7 @@ body{
     width: 300px;
   }
   .video {
-    flex: 1 1 calc(50% - 20px); /* 2 items per row on smaller screens */
+    flex: 1 1 calc(50% - 20px);
   }
 }
 
@@ -312,6 +303,31 @@ body{
     width: 200px;
   }
   .video {
-    flex: 1 1 100%; /* 1 item per row on very small screens */
+    flex: 1 1 100%;
   }
+}
+
+
+
+
+
+
+.photo-container {
+  display: grid;
+  position: relative;
+}
+
+.photo-layer {
+  grid-area: 1 / 1;
+  width: 100%;
+  height: auto;
+}
+
+.inner-photo {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 50px;
+  left: 50px;
+  clip-path: circle(60px at center);
 }
